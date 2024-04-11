@@ -18,8 +18,17 @@
                 <li><a class="dropdown-item" href="#!">Settings</a></li>
                 <li><a class="dropdown-item" href="#!">Activity Log</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#!">Logout</a></li>
+                <li><a class="dropdown-item" href="#!" onclick="logout()">Logout</a></li>
             </ul>
         </li>
     </ul>
 </nav>
+
+<form action="./auth/process-logout.php" method="post" id="logout"></form>
+
+<script>
+    function logout () {
+        event.preventDefault();
+        document.getElementById("logout").submit();
+    }
+</script>
