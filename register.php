@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "./auth/validate-login.php";
+require_once "./auth/is-loggedin.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
